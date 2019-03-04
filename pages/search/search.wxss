@@ -1,0 +1,35 @@
+page{
+	background-color:white;
+}
+.logo_search{
+	padding:30rpx 30rpx 0;
+}
+.logo_search .search_box{
+	height:70rpx;
+	border:1rpx solid #5293EC;
+	box-sizing:border-box;
+	display:flex;
+}
+.logo_search .search_box .input{
+	flex:1;
+	height:48rpx;
+	padding:10rpx 25rpx;
+}
+.logo_search .search_box .input input{
+	min-height:0;
+	font-size:28rpx;
+	height:48rpx;
+}
+.logo_search .search_box .icon{
+	width:68rpx;
+	height:68rpx;
+	background-color: #5293EC;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.logo_search .search_box .icon image{
+	width:40rpx;
+	height:40rpx;
+	display:block;
+}

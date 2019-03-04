@@ -1,0 +1,44 @@
+.type_box{
+	background-color:white;
+	border-radius:5rpx;
+	margin:30rpx;
+	font-size:30rpx;
+}
+.type_list{
+	padding:20rpx 30rpx 20rpx 0;
+	line-height:50rpx;
+	display:flex;
+	position:relative;
+}
+.type_list::before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 30rpx;
+	bottom:0;
+	border-bottom:1rpx dashed #eee;
+}
+.type_box .type_list:last-child::before{
+	display:none;
+}
+.type_list .quanbu{
+	margin-left:30rpx;
+}
+.type_list .flex_1{
+	flex:1;
+	display:flex;
+	flex-wrap:wrap;
+}
+.type_list .flex_1 .item{
+	margin-left:30rpx;
+}
+.type_list2 .item{
+	display:flex;
+	align-items:center;
+	margin-left:30rpx;
+}
+.type_list2 .item image{
+	width:32rpx;
+	height:32rpx;
+}

@@ -1,0 +1,34 @@
+<view class="type_box">
+	<view class="type_list">
+		<view class="quanbu">全部</view>
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+	<view class="type_list">
+		<view class="quanbu">全部</view>
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list2}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+	<view class="type_list">
+		<view class="quanbu">全部</view>
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list3}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+	<view class="type_list">
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list4}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+</view>
+<view class="type_box">
+	<view class="type_list type_list2">
+		<view class="item" wx:for="{{type_list5}}" wx:key="{{index}}">
+			<image src="{{type_list5_index == index ? item.selectIcon : item.icon}}"></image>
+			<view>{{item.title}}</view>
+		</view>
+	</view>
+</view>
+<courseList list="{{courseList.data}}"></courseList>

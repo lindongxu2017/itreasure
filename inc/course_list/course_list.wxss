@@ -1,0 +1,52 @@
+.course{
+	padding:40rpx 30rpx 30rpx; 
+	font-size:0;
+}
+.course_item{
+	width:330rpx;
+	margin-bottom:30rpx;
+	display:inline-block;
+}
+.course_item image{
+	width:100%;
+	height:180rpx;
+}
+.course_item:nth-child(2n-1){
+	margin-right:30rpx;
+}
+.course_item .content{
+	border: 1rpx solid rgba(229,229,229,0.5);
+	border-top:none;
+	background-color:white;
+	padding:10rpx 15rpx 15rpx;
+}
+.course_item .content .title{
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	font-size:32rpx;
+	line-height:42rpx;
+	margin-bottom:5rpx;
+}
+.course_item .content .people_price{
+	height:40rpx;
+    line-height:40rpx;
+	color: #bbb;
+    font-size: 24rpx;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.course_item .content .people_price .people{
+	display:flex;
+	align-items:center;
+}
+.course_item .content .people_price .people image{
+	width:32rpx;
+	height:32rpx;
+}
+.course_item .content .people_price .price{
+    color: #FF6E03;
+	font-size:28rpx;
+	line-height:40rpx;
+}

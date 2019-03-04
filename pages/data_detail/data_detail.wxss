@@ -1,0 +1,62 @@
+page{
+	padding-top:30rpx;
+}
+.list{
+	padding:0 30rpx;
+}
+.list .item{
+	margin-bottom:30rpx;
+	padding:20rpx;
+	background-color:white;
+	border-radius:10rpx;
+}
+.list .item .line{
+	display:flex;
+	align-items:center;
+}
+.list .item .line.bottom{
+	margin-bottom:15rpx;
+	line-height:40rpx;
+}
+.list .item .line .type{
+	font-size:28rpx;
+	height:40rpx;
+	width:100rpx;
+	text-align:center;
+    color:#fff;
+    background-color: #FF6F04;
+    border-radius:4rpx;
+}
+.list .item .line .title{
+	flex: 1;
+	font-size:32rpx;
+	margin:0 20rpx;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.list .item .line .price{
+	font-size: 32rpx;
+    color: #EC3C43;
+}
+.list .item .line .icon_nub{
+	margin-right:30rpx;
+	line-height:28rpx;
+	font-size:28rpx;
+	display:flex;
+	align-items:center;
+	color:#bdbdbd;
+}
+.list .item .line .icon_nub image{
+	width:28rpx;
+	height:28rpx;
+	margin-right:5rpx;
+}
+.list .item .content{
+	padding:30rpx 0 10rpx;
+	min-height:200rpx;
+	font-size:32rpx;
+	color:#555;
+	margin-top:20rpx;
+	border-top:1rpx solid #eee;
+}

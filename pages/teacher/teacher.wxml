@@ -1,0 +1,15 @@
+<view class="list">
+	<view class="item" wx:for="{{list.data}}" wx:key="{{index}}">
+		<view class="img_box">
+			<view class="face_box">
+				<image src="{{item.photo}}" class="face"></image>
+				<image src="/images/icons/one.png" class="icon"></image>
+			</view>
+			<view class="name">钟诚</view>
+			<view class="job">清华大学教授</view>
+		</view>
+		<view class="explain">
+			<view>拥有超过10年在外企进行软件开发、项目管理的经验， 带领团队...</view>
+		</view>
+	</view>
+</view>

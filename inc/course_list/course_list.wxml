@@ -1,0 +1,15 @@
+<view class="course">
+	<view class="course_item" wx:for="{{list}}" wx:key="{{index}}">
+		<image src="{{item.cover}}" mode='aspectFill'></image>
+		<view class="content">
+			<view class="title">{{item.title}}</view>
+			<view class="people_price">
+				<view class="people">
+					<image src="/images/icons/templet.png"></image>
+					<view>{{item.people}}</view>
+				</view>
+				<view class="price">￥{{item.price}}</view>
+			</view>
+		</view>
+	</view>
+</view>

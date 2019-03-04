@@ -1,0 +1,115 @@
+<view class="logo_search">
+	<image class="logo" src="/images/logo.png"></image>
+	<view class="search_box">
+		<view class="input">
+			<input placeholder='搜索'></input>
+		</view>
+		<view class="icon">
+			<image src="/images/icons/search.png"></image>
+		</view>
+	</view>
+</view>
+
+<swiper indicator-dots autoplay circular indicator-color="#fff" indicator-active-color="#489CF2">
+	<swiper-item wx:for="{{imgUrls}}" wx:key="{{index}}">
+		<navigator hover-class='none' url="{{item.action}}" style="background-image:url({{item.photo}});"></navigator>
+	</swiper-item>
+</swiper>
+
+<view class="list1">
+	<view wx:for="{{list1}}" wx:key="{{index}}">
+		<view class="item">
+			<navigator hover-class='none' url='{{item.url}}' open-type="{{item.type == 1 ? 'navigate' : 'switchTab'}}">
+				<image class="img" src="{{item.photo}}"></image>
+				<view class="title">{{item.name}}</view>
+			</navigator>
+		</view>
+	</view>		
+</view>
+
+<view class="bg1">
+	<view class="sec_title">桥思讲堂</view>
+	<view class="sec_explain">理论结合职场实战案例经验，投行和现代科技创新学习课堂，打造进军职场高手的桥梁</view>
+	<view class="forum">
+		<view class="forum_item" wx:for="{{forum}}" wx:key="{{index}}">
+			<image src="{{item.cover}}"></image>
+			<view>{{item.explain}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="bg2">
+	<view class="sec_title">
+		<view class="btns">
+			<view class="btn">最新</view>
+			<view class="btn btn2">最热</view>
+		</view>
+		<view class="more">
+			<view>更多</view>
+			<image src="/images/icons/templet.png"></image>
+		</view>
+	</view>
+	<courseList list="{{courseList1}}"></courseList>
+</view>
+
+<view class="bg1">
+	<view class="sec_title">
+		<view>投资银行</view>
+		<view class="more">
+			<view>更多</view>
+			<image src="/images/icons/templet.png"></image>
+		</view>
+	</view>
+	<view class="sec_explain">上市、并购、企业融资、财务会计、尽职调查等投行专业职能及案例课程</view>
+	<courseList list="{{courseList2}}"></courseList>
+</view>
+
+<view class="bg2">
+	<view class="sec_title">
+		<view>现代科技</view>
+		<view class="more">
+			<view>更多</view>
+			<image src="/images/icons/templet.png"></image>
+		</view>
+	</view>
+	<view class="sec_explain">金融科技、人工智能、物联网、区块链等新兴时代创新科技呈现</view>
+	<courseList list="{{courseList3}}"></courseList>
+</view>
+
+<view class="bg1">
+	<view class="sec_title">
+		<view>名师风采</view>
+		<view class="more">
+			<view>更多</view>
+			<image src="/images/icons/templet.png"></image>
+		</view>
+	</view>
+	<view class="teacher">
+		<view class="teacher_item" wx:for="{{teacher}}" wx:key="{{index}}">
+			<view class="img">
+				<image src="{{item.img}}"></image>
+			</view>
+			<view class="txt">{{item.name}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="bg2">
+	<view class="sec_title">合作机构</view>
+	<view class="mechanism">
+		<view class="mechanism_item" wx:for="{{mechanism}}" wx:key="{{index}}">
+			<image src="{{item.img}}"></image>
+		</view>
+	</view>
+	<view class="study">
+		<view>开始学习</view>
+	</view>
+</view>
+
+<view class="footer">
+	<view class="footer_item" wx:for="{{footer}}" wx:key="{{index}}">
+		<image src="{{item.icon}}"></image>
+		<view>{{item.content}}</view>
+	</view>
+	<view class="copyright">粤ICP备18148356号-1</view>
+</view>

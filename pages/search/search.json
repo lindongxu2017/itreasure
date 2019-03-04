@@ -1,0 +1,6 @@
+{
+	"navigationBarTitleText": "搜索",
+	"usingComponents": {
+		"courseList": "/inc/course_list/course_list"
+	}
+}

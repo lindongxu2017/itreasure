@@ -1,0 +1,28 @@
+<view class="user-box">
+	<view class="user">
+		<view class="head">
+			<image src='/images/logo.png'></image>
+		</view>
+		<view class="userinfo">
+			<view class="name">开心就好555123</view>
+			<view class="btns">
+				<view class="btn">签到</view>
+				<view class="txt">(今日签到可获取10积分)</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="pd"></view>
+<view class="list">
+	<navigator url="{{item.url}}" hover-class='none' wx:for="{{list}}" wx:key="{{index}}">
+		<view class="array">
+			<view class="item">
+				<view class="title">{{item.title}}</view>
+				<view class="right">
+					<image src="/images/icons/right.png"></image>
+				</view>
+			</view>
+		</view>
+	</navigator>
+</view>
+<view class="loginOut">退出登录</view>

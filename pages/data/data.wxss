@@ -1,0 +1,86 @@
+.type_box{
+	background-color:white;
+	border-radius:5rpx;
+	margin:30rpx;
+	font-size:30rpx;
+}
+.type_list{
+	padding:20rpx 30rpx 20rpx 0;
+	line-height:50rpx;
+	display:flex;
+	position:relative;
+}
+.type_list::before{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 30rpx;
+	bottom:0;
+	border-bottom:1rpx dashed #eee;
+}
+.type_box .type_list:last-child::before{
+	display:none;
+}
+.type_list .quanbu{
+	margin-left:30rpx;
+}
+.type_list .flex_1{
+	flex:1;
+	display:flex;
+	flex-wrap:wrap;
+}
+.type_list .flex_1 .item{
+	margin-left:30rpx;
+}
+.list{
+	padding:0 30rpx;
+}
+.list .item{
+	margin-bottom:30rpx;
+	padding:20rpx;
+	background-color:white;
+	border-radius:10rpx;
+}
+.list .item .line{
+	display:flex;
+	align-items:center;
+}
+.list .item .line.bottom{
+	margin-bottom:15rpx;
+	line-height:40rpx;
+}
+.list .item .line .type{
+	font-size:28rpx;
+	height:40rpx;
+	width:100rpx;
+	text-align:center;
+    color:#fff;
+    background-color: #FF6F04;
+    border-radius:4rpx;
+}
+.list .item .line .title{
+	flex: 1;
+	font-size:32rpx;
+	margin:0 20rpx;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.list .item .line .price{
+	font-size: 32rpx;
+    color: #EC3C43;
+}
+.list .item .line .icon_nub{
+	margin-right:30rpx;
+	line-height:28rpx;
+	font-size:28rpx;
+	display:flex;
+	align-items:center;
+	color:#bdbdbd;
+}
+.list .item .line .icon_nub image{
+	width:28rpx;
+	height:28rpx;
+	margin-right:5rpx;
+}

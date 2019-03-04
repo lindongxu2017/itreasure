@@ -1,0 +1,67 @@
+.list{
+	padding:0 30rpx 30rpx;
+}
+.list .item{
+	margin-top:30rpx;
+	width:330rpx;
+	border-radius:5rpx;
+	overflow:hidden;
+	border:1rpx solid #E8ECF1;
+}
+.list .item:nth-child(2n-1){
+	margin-right:30rpx;
+}
+.list .item .img_box{
+	width:250rpx;
+	padding:0 40rpx;
+	height:290rpx;
+	background-color:#E8ECF1;
+	padding-top:40rpx;
+	text-align:center;
+	line-height:1;
+	font-size:32rpx;
+	color:#3C3E42;
+}
+.list .item .img_box .face_box{
+	width:180rpx;
+	height:180rpx;
+	position:relative;
+	margin:0 auto 20rpx;
+}
+.list .item .img_box .face_box .face{
+	width:100%;
+	height:100%;
+	display:block;
+	box-sizing:border-box;
+	border:4rpx solid #F5B83A;
+	border-radius:8rpx;
+}
+.list .item .img_box .face_box .icon{
+	width:44rpx;
+	height:44rpx;
+	display:block;
+	position:absolute;
+	top:-20rpx;
+	right:-16rpx;
+}
+.list .item .img_box .job{
+	font-size:26rpx;
+	margin-top:13rpx;
+	color:#B3B3B3;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.list .item .explain{
+	padding:20rpx 30rpx;
+}
+.list .item .explain view{
+	line-height:30rpx;
+	font-size:24rpx;
+	max-height:60rpx;
+	color:#848589;
+	overflow:hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}

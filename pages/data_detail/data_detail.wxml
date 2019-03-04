@@ -1,0 +1,24 @@
+<view class="list">
+	<view class="item">
+		<view class="line bottom">
+			<view class="type">{{detail.type}}</view>
+			<view class="title">{{detail.title}}</view>
+			<view class="price">￥{{detail.price}}</view>
+		</view>
+		<view class="line">
+			<view class="icon_nub">
+				<image src="/images/icons/templet.png"></image>
+				<view class="nub">{{detail.look}}</view>
+			</view>
+			<view class="icon_nub">
+				<image src="/images/icons/templet.png"></image>
+				<view class="nub">{{detail.download}}</view>
+			</view>
+			<view class="icon_nub">
+				<image src="/images/icons/templet.png"></image>
+				<view class="nub">{{detail.time}}</view>
+			</view>
+		</view>
+		<view class="content">{{detail.content}}</view>
+	</view>
+</view>

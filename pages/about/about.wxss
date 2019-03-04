@@ -1,0 +1,48 @@
+page{
+	background-color:white;
+	padding-top:100rpx;
+}
+.type_list{
+	background:white;
+	border-bottom:1rpx solid #eee;
+	height:100rpx;
+	line-height:99rpx;
+	box-sizing:border-box;
+	width:100%;
+	position:fixed;
+	top:0;
+	display:flex;
+	align-items:center;
+	left:0;
+}
+.type_list .item{
+	font-size:32rpx;
+	flex:1;
+	text-align:center;
+	display:flex;
+	justify-content:center;
+}
+.type_list .item > view{
+	position:relative;
+}
+.type_list .item.active > view{
+	color:#489cf2;
+}
+.type_list .item.active > view::after{
+	position:absolute;
+	width:100%;
+	left:0;
+	bottom:-1rpx;
+	content:"";
+	height:2rpx;
+	background-color:#489cf2;
+}
+.content image{
+	margin:60rpx auto 40rpx;
+	display:block;
+	width:340rpx;
+	height:86rpx;
+}
+.content > view{
+	padding:0 30rpx;
+}

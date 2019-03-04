@@ -1,0 +1,13 @@
+<view class="type_list">
+	<view class="item {{index == 0 ? 'active' : ''}}">
+		<view bindtap="indexTab" data-index="0">关于我们</view>
+	</view>
+	<view class="item {{index == 1 ? 'active' : ''}}">
+		<view bindtap="indexTab" data-index="1">商务合作</view>
+	</view>
+</view>
+<view class="content">
+	<image src="/images/logo.png"></image>
+	<view hidden='{{index != 0}}'>1iTreasure在线培训平台致力于成为国际领先的金融及时代金融科技在线教育企业，通过社会上在职人士的分享，将金融的实践案例和新时代的科技产物结合理论知识，真正融入到商学院和大学教育体系。学习内容包括投资银行（上市、并购、估值建模、财务分析）、人工智能、区块链、物联网等。目标是将社会实践和教学理论相结合，提高商学院及高校教育水平，改善中国教育体制，搭建大学生真正通向职场的桥梁，增强在职人士对应领域的职场进阶与技能提升。</view>
+	<view hidden='{{index != 1}}'>22222</view>
+</view>

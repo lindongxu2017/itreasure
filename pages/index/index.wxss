@@ -1,0 +1,235 @@
+.logo_search{
+	align-items:center;
+	display:flex;
+	padding:20rpx 30rpx;
+	justify-content:space-between;
+	background-color:white;
+}
+.logo_search .logo{
+	width:240rpx;
+	height:60rpx;
+}
+.logo_search .search_box{
+	width:280rpx;
+	height:60rpx;
+	border:1rpx solid #5293EC;
+	box-sizing:border-box;
+	display:flex;
+}
+.logo_search .search_box .input{
+	flex:1;
+	height:38rpx;
+	padding:10rpx;
+}
+.logo_search .search_box .input input{
+	min-height:0;
+	font-size:30rpx;
+	height:38rpx;
+}
+.logo_search .search_box .icon{
+	width:58rpx;
+	height:58rpx;
+	background-color: #5293EC;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.logo_search .search_box .icon image{
+	width:32rpx;
+	height:32rpx;
+	display:block;
+}
+swiper {
+  	height:48vw;
+}
+swiper navigator{
+	height:100%;
+	background:no-repeat center/cover;
+}
+.list1{
+	padding:45rpx 0 5rpx;
+	display: flex;
+	justify-content: space-around;
+	background: white;
+	margin-bottom:18rpx;
+	font-size: 26rpx;
+	color:#333;
+	line-height:26rpx;
+  	flex-wrap: wrap;
+}
+.list1 > view {
+  	flex-basis: 21%;
+  	margin-bottom:40rpx;
+}
+.list1 .item{
+	text-align: center;
+}
+.list1 .item .img{
+	width:100rpx;
+	height:100rpx;
+	border-radius: 50rpx;
+}
+.list1 .item .title{
+	margin-top: 21rpx;
+}
+.bg1{
+	background-color:white;
+}
+.bg2{
+	background-color:#F5F8FA;
+}
+.sec_title{
+	padding:30rpx 30rpx 0;
+	color: #5293EC;
+    line-height: 88rpx;
+    font-size:36rpx;
+    font-weight:600;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+}
+.sec_title .btns{
+	display:flex;
+	align-items:center;
+}
+.sec_title .btns .btn{
+	height:60rpx;
+	width:120rpx;
+	line-height:58rpx;
+	text-align:center;
+	font-size:30rpx;
+	box-sizing:border-box;
+    border-radius:4rpx;
+    margin-right:20rpx;
+    border: 1rpx solid #5393EB;
+	background-color: #5393EB;
+    color: #fff;
+}
+.sec_title .btns .btn.btn2{
+    border: 1rpx solid #797979;
+	color:#949494;
+	background-color:white;
+}
+.sec_title .more{
+	display:flex;
+	align-items:center;
+	font-size:24rpx;
+	color:#949494;
+}
+.sec_title .more image{
+	width:32rpx;
+	height:32rpx;
+	margin-left:10rpx;
+}
+.sec_explain{
+	color: #939393;
+    font-size: 24rpx;
+    padding: 0 30rpx;
+    line-height: 30rpx;
+}
+.forum{
+	padding:30rpx;
+}
+.forum .forum_item{
+	display: flex;
+    align-items: center;
+    margin-bottom:20rpx;
+}
+.forum .forum_item image{
+	width:150rpx;
+	height:150rpx;
+	margin-right:30rpx;
+}
+.forum .forum_item > view{
+	flex: 1;
+    color: #353535;
+    line-height:40rpx;
+	font-size:30rpx;
+}
+.teacher{
+	padding:20rpx 15rpx 0;
+}
+.teacher_item{
+	width:50%;
+	display:inline-block;
+	padding:0 15rpx;
+	box-sizing:border-box;
+	margin-bottom:40rpx;
+}
+.teacher_item .img{
+	width:100%;
+	padding-bottom:100%;
+	position:relative;
+	margin-bottom:20rpx;
+}
+.teacher_item .img image{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+}
+.teacher_item .txt{
+	font-size: 32rpx;
+    font-weight: 600;
+    color: #383B40;
+    text-align: center;
+    margin-bottom: 10rpx;
+    background-color: #fff;
+}
+.mechanism{
+	padding:60rpx 20rpx;
+	font-size:0;
+}
+.mechanism_item{
+	display:inline-block;
+	width:calc(33.333333333333% - 40rpx);
+	height:90rpx;
+	margin:0 20rpx;
+	box-sizing:border-box;
+	margin-bottom:30rpx;
+	border:1rpx solid #e5e5e5;
+}
+.mechanism_item image{
+	width:100%;
+	height:100%;
+}
+.study{
+	padding:40rpx 0 60rpx;
+	text-align:center;
+}
+.study view{
+    display: inline-block;
+    font-size: 32rpx;
+    color: #fff;
+    padding:14rpx 46rpx;
+    background-color: #5393EB;
+    border-radius: 80rpx;
+    box-shadow: 4rpx 4rpx 20rpx rgba(83,147,235,0.5);
+}
+.footer{
+	padding:30rpx 30rpx 20rpx;
+	background-color:#3C3A47;
+	color:#dbdbdb;
+}
+.footer .footer_item{
+	margin-bottom:15rpx;
+	display:flex;
+	align-items:center;
+	font-size:28rpx;
+	line-height:32rpx;
+}
+.footer .footer_item image{
+	width:32rpx;
+	height:32rpx;
+	margin-right:20rpx;
+}
+.footer .copyright {
+    text-align: center;
+    padding-top: 20rpx;
+    margin-top: 30rpx;
+    border-top:1rpx solid #595764;
+    color: #D8D8D8;
+	font-size:30rpx;
+	line-height:1;
+}

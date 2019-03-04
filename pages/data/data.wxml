@@ -1,0 +1,43 @@
+<view class="type_box">
+	<view class="type_list">
+		<view class="quanbu">全部</view>
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+	<view class="type_list">
+		<view class="quanbu">全部</view>
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list2}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+	<view class="type_list">
+		<view class="quanbu">全部</view>
+		<view class="flex_1">
+			<view class="item" wx:for="{{type_list3}}" wx:key="{{index}}">{{item}}</view>
+		</view>
+	</view>
+</view>
+<view class="list">
+	<view class="item" wx:for="{{dataList.data}}" wx:key="{{index}}">
+		<view class="line bottom">
+			<view class="type">{{item.type}}</view>
+			<view class="title">{{item.title}}</view>
+			<view class="price">￥{{item.price}}</view>
+		</view>
+		<view class="line">
+			<view class="icon_nub">
+				<image src="/images/icons/templet.png"></image>
+				<view class="nub">{{item.look}}</view>
+			</view>
+			<view class="icon_nub">
+				<image src="/images/icons/templet.png"></image>
+				<view class="nub">{{item.download}}</view>
+			</view>
+			<view class="icon_nub">
+				<image src="/images/icons/templet.png"></image>
+				<view class="nub">{{item.time}}</view>
+			</view>
+		</view>
+	</view>
+</view>
