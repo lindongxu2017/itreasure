@@ -1,0 +1,7 @@
+/* inc/noData/noData.wxss */
+.noData {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}

@@ -7,12 +7,12 @@ Page({
 		// 操作列表
 		list: [
 			{
-				url: '',
+        url: '/pages/home_page/home_page',
 				title: '我的首页',
 				id: 1,
 			},
 			{
-				url: '',
+        url: '/pages/my_learn/my_learn',
 				title: '我的学习',
 				id: 2,
 			},

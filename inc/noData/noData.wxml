@@ -1,0 +1,4 @@
+<!--inc/noData/noData.wxml-->
+<view class='noData' wx:if="{{isShow}}">
+  <text>暂无数据</text>
+</view>

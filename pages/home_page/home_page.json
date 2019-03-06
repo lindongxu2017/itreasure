@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "noData": "/inc/noData/noData",
+    "courselist": "/inc/course_list/course_list",
+    "orderlist": "/inc/orderlist/orderlist"
+  },
+  "navigationBarTitleText": "我的主页"
+}

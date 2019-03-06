@@ -1,0 +1,118 @@
+<!--pages/security_set/security_set.wxml-->
+<view class='cell'>
+  <view class='cell-key'>登录密码</view>
+  <view class='cell-state'>
+    <block wx:if="{{pswdset}}">
+      <image src='/images/icons/set.png'></image>
+      <text>已设置</text>
+      <view data-type="1" bindtap='openPopup'>修改</view>
+    </block>
+    <block wx:else>
+      <image src='/images/icons/unset.png'></image>
+      <text>未设置</text>
+      <view data-type="1" bindtap='openPopup'>设置</view>
+    </block>
+  </view>
+</view>
+<view class='cell'>
+  <view class='cell-key'>手机号码</view>
+  <view class='cell-state'>
+    <block wx:if="{{phoneset}}">
+      <image src='/images/icons/set.png'></image>
+      <text>已设置</text>
+      <view data-type="2" bindtap='openPopup'>修改</view>
+    </block>
+    <block wx:else>
+      <image src='/images/icons/unset.png'></image>
+      <text>未设置</text>
+      <view data-type="2" bindtap='openPopup'>设置</view>
+    </block>
+  </view>
+</view>
+<view class='cell'>
+  <view class='cell-key'>邮箱</view>
+  <view class='cell-state'>
+    <block wx:if="{{emailset}}">
+      <image src='/images/icons/set.png'></image>
+      <text>已设置</text>
+      <view data-type="3" bindtap='openPopup'>修改</view>
+    </block>
+    <block wx:else>
+      <image src='/images/icons/unset.png'></image>
+      <text>未设置</text>
+      <view data-type="3" bindtap='openPopup'>设置</view>
+    </block>
+  </view>
+</view>
+
+<view class='popup-mask' hidden='{{!popupVisible1}}'>
+  <view class='popup-wrapper'>
+    <view class='popup-header'>
+      <view class='popup-title'>修改登录密码</view>
+      <image class='close-icon' src='/images/icons/close.png' data-type="1" bindtap='openPopup'></image>
+    </view>
+    <view class='popup-body'>
+      <view class='form-label'>当前密码</view>
+      <view class='form-controll'>
+        <input placeholder='请输入当前密码'></input>
+      </view>
+      <view class='form-label'>新密码</view>
+      <view class='form-controll'>
+        <input placeholder='请输入新密码'></input>
+      </view>
+      <view class='form-label'>确认密码</view>
+      <view class='form-controll'>
+        <input placeholder='请再次输入新密码'></input>
+      </view>
+    </view>
+    <view class='popup-footer'>
+      <view class='btn'>确认</view>
+    </view>
+  </view>
+</view>
+
+<view class='popup-mask' hidden='{{!popupVisible2}}'>
+  <view class='popup-wrapper'>
+    <view class='popup-header'>
+      <view class='popup-title'>修改手机号码</view>
+      <image class='close-icon' src='/images/icons/close.png' data-type="2" bindtap='openPopup'></image>
+    </view>
+    <view class='popup-body'>
+      <view class='form-label'>手机号码</view>
+      <view class='form-controll'>
+        <input placeholder='请输入手机号码'></input>
+      </view>
+      <view class='form-label'>验证码</view>
+      <view class='form-controll'>
+        <view class='get-btn' bindtap='getcode'>获取</view>
+        <input style='padding-right: 70px;' placeholder='请输入验证码'></input>
+      </view>
+    </view>
+    <view class='popup-footer'>
+      <view class='btn'>确认</view>
+    </view>
+  </view>
+</view>
+
+<view class='popup-mask' hidden='{{!popupVisible3}}'>
+  <view class='popup-wrapper'>
+    <view class='popup-header'>
+      <view class='popup-title'>修改邮箱</view>
+      <image class='close-icon' src='/images/icons/close.png' data-type="3" bindtap='openPopup'></image>
+    </view>
+    <view class='popup-body'>
+      <view class='form-label'>当前密码</view>
+      <view class='form-controll'>
+        <input placeholder='请输入邮箱'></input>
+      </view>
+      <view class='form-label'>验证码</view>
+      <view class='form-controll'>
+        <view class='get-btn' bindtap='getcode'>获取</view>
+        <input style='padding-right: 70px;' placeholder='请输入验证码'></input>
+      </view>
+    </view>
+    <view class='popup-footer'>
+      <view class='btn'>确认</view>
+    </view>
+  </view>
+</view>

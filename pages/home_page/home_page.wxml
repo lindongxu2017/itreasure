@@ -1,0 +1,72 @@
+<!--pages/home_page/home_page.wxml-->
+<image class='bg' mode='widthFix' src='/images/demo.jpg'></image>
+<view class='user-info'>
+  <view class='head-info'>
+    <image class='operation' mode='aspectFill' src='/images/demo.jpg' data-url="/pages/edit_info/edit_info" bindtap='goPage'></image>
+    <image class='avatar' mode='aspectFill' src='/images/demo.jpg'></image>
+    <image class='operation' mode='aspectFill' src='/images/demo.jpg' data-url="/pages/security_set/security_set" bindtap='goPage'></image>
+  </view>
+  <view class='user-name'>admin</view>
+  <view class='vip-point'>
+    <view>
+      <image mode='aspectFill' src='/images/demo.jpg'></image>
+      <text>钻石会员</text>
+    </view>
+    <view>
+      <image mode='aspectFill' src='/images/demo.jpg'></image>
+      <text>267</text>
+    </view>
+  </view>
+  <view class='vip-time'>
+    <view class='time'>到期时间：<text>已到期</text></view>
+    <view class='btn'>续费</view>
+  </view>
+</view>
+
+<view class='tab-wrapper'>
+  <view class='tab-bar'>
+    <view wx:for="{{tablist}}"
+      wx:key="{{index}}" class='{{tabActive == index ? "active" : ""}}'
+      data-index="{{index}}" bindtap='switchTab'>{{item.name}}</view>
+  </view>
+</view>
+
+<view class='tab-content-wrapper'>
+  <view class='learning-course-wrapper' hidden='{{tabActive !== 0}}'>
+    <courselist></courselist>
+  </view>
+  <view hidden='{{tabActive !== 1}}'>
+    <courselist></courselist>
+  </view>
+  <view hidden='{{tabActive !== 2}}'>
+    <view class='license-list'>
+      <view class='license-item'>
+        <image mode='aspectFill' src='/images/demo.jpg'></image>
+        <view class='license-name'>债券、ABS、CRM从基础到实操</view>
+      </view>
+      <view class='license-item'>
+        <image mode='aspectFill' src='/images/demo.jpg'></image>
+        <view class='license-name'>债券、ABS、CRM从基础到实操</view>
+      </view>
+    </view>
+  </view>
+  <view hidden='{{tabActive !== 3}}'>
+    <view class='point-list'>
+      <view class='point-item-wrapper' wx:for='{{4}}' wx:key="{{index}}">
+        <view>
+          <view class='iten-name'>签到</view>
+          <view class='create-time'>2019-01-22 09：30</view>
+        </view>
+        <view>
+          <view class='point-num'>+10</view>
+          <view class='point-surplus'>剩余：257</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view hidden='{{tabActive !== 4}}'>
+    <orderlist></orderlist>
+  </view>
+</view>
+
+<noData is-show="{{noData}}"></noData>

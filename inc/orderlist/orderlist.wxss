@@ -1,0 +1,92 @@
+/* inc/orderlist/orderlist.wxss */
+.item {
+  display: flex;
+  display: -webkit-flex;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  padding: 0 30rpx;
+  margin-bottom: 40rpx;
+}
+.item-state {
+  position: relative;
+  flex: 3;
+  -webkit-flex: 3;
+}
+.state-text {
+  position: absolute;
+  left: 0;
+  top: -12rpx;
+  font-size: 24rpx;
+  padding: 8rpx 10rpx;
+  line-height: 1;
+  color: #fff;
+}
+
+.state-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12rpx;
+  width: 0;
+  height: 0;
+  border: 6rpx solid;
+  border-color: transparent transparent red red;
+}
+.state-text.green::before {
+  border-color: transparent transparent #6BDB77 #6BDB77;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: #6BDB77;
+}
+
+.item-state image {
+  width: 100%;
+  height: 22vw;
+  border-radius: 10rpx;
+  font-size: 0;
+}
+.item-info {
+  flex: 5;
+  -webkit-flex: 5;
+  width: 0;
+  padding-left: 30rpx;
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.item-name {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.item-num-del {
+  display: flex;
+  display: -webkit-flex;
+  align-items: stretch;
+  -webkit-align-items: stretch;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.item-num-del .num {
+  font-size: 28rpx;
+  color: #333;
+}
+.item-num-del .num text {
+  color: #FA8731;
+}
+.item-num-del .del {
+  padding: 6rpx 14rpx;
+  border: 2rpx solid #353535;
+  color: #353535;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+}

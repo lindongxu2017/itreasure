@@ -1,0 +1,23 @@
+<!--inc/orderlist/orderlist.wxml-->
+<view class='list'>
+  <view class='item' wx:for="{{list}}" wx:key="{{index}}">
+    <view class='item-state'>
+      <view class='state-text {{index % 2 == 0 ? "red" : "green"}}'>
+        <text wx:if="{{item.status == 'unpay'}}">未支付</text>
+        <text wx:if="{{item.status == 'assemble'}}">拼团中1/4</text>
+        <text wx:if="{{item.status == 'cancel'}}">已取消</text>
+        <text wx:if="{{item.status == 'paid'}}">已支付</text>
+        <text wx:if="{{item.status == 'refund'}}">退款中</text>
+        <text wx:if="{{item.status == 'refunded'}}">已退款</text>
+      </view>
+      <image src='/images/demo.jpg/'></image>
+    </view>
+    <view class='item-info'>
+      <view class='item-name'>Python开发入门与爬虫项目实战</view>
+      <view class='item-num-del'>
+        <view class='num'>已有<text>4</text>人学习</view>
+        <view class='del' bindtap='delItem' data-index="{{index}}">删除</view>
+      </view>
+    </view>
+  </view>
+</view>

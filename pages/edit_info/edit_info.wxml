@@ -1,0 +1,31 @@
+<!--pages/edit_info/edit_info.wxml-->
+<view class='upload-wrapper' bindtap='uploadImg'>
+  <view>
+    <text>修改头像</text>
+    <view class='mask'></view>
+    <image mode='aspectFill' src='{{imgurl}}'></image>
+  </view>
+</view>
+<view class='form-wrapper'>
+  <view class='form-label'>用户名</view>
+  <view class='form-controll'>
+    <input></input>
+  </view>
+</view>
+<view class='form-wrapper'>
+  <view class='form-label'>性别</view>
+  <view class='form-controll'>
+    <view class='radio' data-type="man" bindtap='change'>
+      <view class='{{sex == 0 ? "active" : ""}}'></view>
+      <text>男</text>
+    </view>
+    <view class='radio' data-type="women" bindtap='change'>
+      <view class='{{sex == 1 ? "active" : ""}}'></view>
+      <text>女</text>
+    </view>
+  </view>
+</view>
+
+<view class='btn'>
+  <text>保存</text>
+</view>
