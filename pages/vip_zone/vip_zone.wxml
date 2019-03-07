@@ -1,0 +1,88 @@
+<!--pages/vip_zone/vip_zone.wxml-->
+<view class='view-wrapper'>
+  <swiper current="{{current}}" style='height: {{height}}px' previous-margin="{{'60rpx'}}" next-margin="{{'60rpx'}}" bindchange="switchView">
+    <swiper-item wx:for="{{viplist}}" wx:key="{{index}}">
+      <view class='content-wrapper {{current == index ? "active" : ""}} {{index == 0 ? "golden" : index == 1 ? "platinum height" : "masonry"}}'>
+        <view class='img-wrapper'>
+          <image class='vip-img' wx:if="{{index == 0}}" src='/images/icons/golden-member.png' mode='widthFix'></image>
+          <image class='vip-img' wx:if="{{index == 1}}" src='/images/icons/platinum-member.png' mode='widthFix'></image>
+          <image class='vip-img' wx:if="{{index == 2}}" src='/images/icons/masonry-member.png' mode='widthFix'></image>
+        </view>
+        <view class='vip-price-wrapper' wx:if="{{index == 0}}">
+          <text class='unit'>￥</text>
+          <text class='total-money'>0.03</text>
+          <text class='month'>元/3个月</text>
+        </view>
+        <view class='vip-price-wrapper' wx:if="{{index == 1}}">
+          <text class='unit'>￥</text>
+          <text class='total-money'>1686</text>
+          <text class='month'>元/6个月</text>
+        </view>
+        <view class='vip-price-wrapper' wx:if="{{index == 2}}">
+          <text class='unit'>￥</text>
+          <text class='total-money'>2688</text>
+          <text class='month'>元/年</text>
+        </view>
+        <view class='btn-wrapper'>
+          <text>购买</text>
+        </view>
+        <view class='product-service' wx:if="{{index == 0}}">
+          <view class='cell-title'>产品服务</view>
+          <view><text>·</text>可观看平台<text class='high'>15节</text>初级及进阶课程</view>
+          <view><text>·</text>看完<text class='high'>2节</text>课程觉得不满意平台可承诺全额退款</view>
+          <view wx:if="{{current == 0}}"><text>·</text>可免费下载<text class='high'>30份</text>资料包（5元以下）</view>
+        </view>
+        <view class='product-service' wx:if="{{index == 1}}">
+          <view class='cell-title'>产品服务</view>
+          <view><text>·</text>可观看平台<text class='high'>30节</text>初级及进阶课程</view>
+          <view><text>·</text>看完<text class='high'>5节</text>课程觉得不满意平台可承诺全额退款</view>
+          <view wx:if="{{current == 1}}"><text>·</text>可免费下载<text class='high'>50份</text>资料包（10元以下）</view>
+        </view>
+        <view class='product-service' wx:if="{{index == 2}}">
+          <view class='cell-title'>产品服务</view>
+          <view><text>·</text>可观看平台<text class='high'>所有</text>课程视频</view>
+          <view><text>·</text>可免费下载<text class='high'>30份</text>资料包（所有）</view>
+          <view wx:if="{{current == 2}}" style='visibility: hidden;'><text>·</text>可免费下载<text class='high'>30份</text>资料包（所有）</view>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='vip-special-wrapper'>
+  <image mode='widthFix' src='/images/icons/vip-special.png'></image>
+  <view class='vip-special-list'>
+    <view>
+      <image src='/images/icons/vip-icon.png'></image>
+      <view>VIP尊贵身份标识</view>
+    </view>
+    <view>
+      <image src='/images/icons/books.png'></image>
+      <view>课程不限时观看</view>
+    </view>
+    <view>
+      <image src='/images/icons/paper.png'></image>
+      <view>精品资料下载</view>
+    </view>
+    <view>
+      <image src='/images/icons/backforward.png'></image>
+      <view>不满意退款承诺</view>
+    </view>
+    <view>
+      <image src='/images/icons/message.png'></image>
+      <view>一对一精准答疑</view>
+    </view>
+    <view>
+      <image src='/images/icons/business.png'></image>
+      <view>业务需求对接</view>
+    </view>
+    <view>
+      <image src='/images/icons/location-icon.png'></image>
+      <view>职业规划指导</view>
+    </view>
+    <view>
+      <image src='/images/icons/people.png'></image>
+      <view>同行人脉构建</view>
+    </view>
+  </view>
+</view>

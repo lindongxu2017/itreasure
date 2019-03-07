@@ -11,7 +11,8 @@
     "pages/data/data",
     "pages/course/course",
     "pages/search/search",
-    "pages/my_learn/my_learn"
+    "pages/my_learn/my_learn",
+    "pages/vip_zone/vip_zone"
   ],
   "tabBar": {
     "color": "#AEAEAE",

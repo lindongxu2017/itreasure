@@ -1,0 +1,119 @@
+/* pages/vip_zone/vip_zone.wxss */
+.view-wrapper {
+  background-color: #fff;
+}
+swiper {
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+swiper-item {
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.img-wrapper {
+  font-size: 0;
+}
+.vip-img {
+  width: 100%;
+}
+.content-wrapper {
+  border: 2rpx solid;
+  border-radius: 10rpx;
+  transition: all 0.2s linear;
+  transform: translateY(15px);
+}
+.content-wrapper.active {
+  transform: translateY(0);
+}
+.content-wrapper.golden {
+  border-color: #382951;
+}
+.content-wrapper.platinum {
+  border-color: #7F86AB;
+}
+.content-wrapper.masonry {
+  border-color: #4F576C;
+}
+.vip-price-wrapper {
+    font-size: 28rpx;
+    color: #B3B3B3;
+    text-align: center;
+    padding: 30rpx 0;
+}
+.total-money {
+  font-size: 60rpx;
+}
+.golden .total-money, .golden .unit {
+  color: #DCA130;
+}
+.platinum .total-money, .platinum .unit {
+  color: #969EC9;
+}
+.masonry .total-money, .masonry .unit {
+  color: #5C4972;
+}
+.btn-wrapper {
+  padding: 0 30rpx;
+}
+.btn-wrapper text {
+  display: block;
+  padding: 14rpx 0;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 6rpx;
+  color: #fff;
+}
+.golden .btn-wrapper text {
+  background-color: #4F576C;
+}
+.platinum .btn-wrapper text {
+  background-color: #969EC9;
+}
+.masonry .btn-wrapper text {
+  background-color: #5C4972;
+}
+.cell-title {
+  font-size: 28rpx;
+  color: #B3B3B3;
+  margin-bottom: 20rpx;
+}
+.product-service {
+  padding: 30rpx;
+}
+.product-service > view {
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.high {
+  color: #DDA231;
+}
+
+.vip-special-wrapper {
+    padding: 60rpx 0;
+    background-color: #F5F8FA;
+}
+.vip-special-wrapper > image {
+  display: block;
+  width: 40%;
+  margin: 0 auto 60rpx;
+}
+.vip-special-list {
+  font-size: 0;
+}
+.vip-special-list > view {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  text-align: center;
+  margin-bottom: 60rpx;
+}
+
+.vip-special-list > view > image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 10rpx;
+}
+.vip-special-list > view > view {
+  font-size: 28rpx;
+  color: #353535;
+}
